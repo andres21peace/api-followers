@@ -26,7 +26,7 @@ function showFollowers(data){
     let card = "";
     let howManyInput = howMany.value;
     for(let i = 0; i < howManyInput; i++){
-        card += " <div class='card m-3' style='width: 200px;'><img class='card-img-top' src="+ data[i].avatar_url +">" + 
+        card += " <div class='card m-3' style='width: 200px;'><img class='card-img-top' src="+ data[i]['avatar_url'] +">" + 
         "<div class='card-body'>" + 
         "<h5 class='card-title'>Username: " +  data[i]['login'] + "</h5>" +
         "<a href=" + data[i]['html_url'] +" class='btn btn-primary'>Visit github profile</a></div></div>";
